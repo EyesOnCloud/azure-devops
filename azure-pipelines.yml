@@ -24,9 +24,6 @@ stages:
              Dockerfile: '**/Dockerfile'
              tags: 
                $(tag)
-
-         - script: |
-           docker image remove eyesoncloud/azdevops:$(Build.BuildId)
            
          - task: Bash@3
            displayName: Deploy to Kubernetes
@@ -35,6 +32,7 @@ stages:
              script: |
                sudo kubectl delete -f deployment.yml --ignore-not-found
                TAG=${BUILD_BUILDID}
+               docker image rm eyesoncloud/azdevops:$TAG
                sed "s|tag|$TAG|g" deployment.yml > deployment-processed.yml
                sudo kubectl apply -f deployment-processed.yml
 
