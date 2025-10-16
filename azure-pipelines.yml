@@ -25,8 +25,11 @@ stages:
              tags: 
                $(tag)
          - task: Bash@3
-           inputs:
-             targetType: 'inline'
-             script: |
-               sudo kubectl apply -f deployment.yml
+            inputs:
+              targetType: 'inline'
+              script: |
+                TAG=$(Build.BuildId)
+                sed "s|\$(tag)|$TAG|g" deployment.yaml > deployment-processed.yaml
+                kubectl apply -f deployment-processed.yaml
+
 
