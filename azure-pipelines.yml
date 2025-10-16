@@ -19,7 +19,7 @@ stages:
          - task: Docker@2
            inputs:
              containerRegistry: 'docker-hub'
-             repository: 'azdevops'
+             repository: 'eyesoncloud/azdevops'
              command: 'buildAndPush'
              Dockerfile: '**/Dockerfile'
              tags: 
