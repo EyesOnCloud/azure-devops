@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome to EyesOnCloud Test Web Server App</title>
+    <title>Welcome to EyesOnCloud devops blue App</title>
     <style>
         body {
             background-color: #1E90FF;
@@ -35,7 +35,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome to EyesOnCloud Test Web Server App</title>
+    <title>Welcome to EyesOnCloud devops green App</title>
     <style>
         body {
             background-color: #ADFF2F;
