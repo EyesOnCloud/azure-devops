@@ -24,8 +24,8 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to EyesOnCloud Test Web Server App</h1>
-    <p>This is a test web server application.</p>
+    <h1>elcome to EyesOnCloud devops blue App</h1>
+    <p>This is a test web server blue application.</p>
     <img src="https://github.com/EyesOnCloud/webapp/raw/main/EOC%20logo.png" alt="EOC Logo">
 </body>
 </html>
@@ -55,8 +55,8 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to EyesOnCloud Test Web Server App</h1>
-    <p>This is a test web server application.</p>
+    <h1>elcome to EyesOnCloud devops green App</h1>
+    <p>This is a test web server green application.</p>
     <img src="https://github.com/EyesOnCloud/webapp/raw/main/EOC%20logo.png" alt="EOC Logo">
 </body>
 </html>
