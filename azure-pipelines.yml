@@ -24,6 +24,10 @@ stages:
              Dockerfile: '**/Dockerfile'
              tags: 
                $(tag)
+
+         - script: |
+           docker image remove eyesoncloud/azdevops:$(Build.BuildId)
+           
          - task: Bash@3
            displayName: Deploy to Kubernetes
            inputs:
