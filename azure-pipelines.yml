@@ -31,5 +31,6 @@ stages:
                 TAG=$(Build.BuildId)
                 sed "s|\$(tag)|$TAG|g" deployment.yaml > deployment-processed.yaml
                 kubectl apply -f deployment-processed.yaml
+                kubectl rollout status deployment/azdevops-deployment
 
 
