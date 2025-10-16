@@ -30,7 +30,7 @@ stages:
              targetType: 'inline'
              script: |
                TAG=${BUILD_BUILDID}
-               sed "s|tag|$TAG|g" deployment.yaml > deployment-processed.yaml
+               sed "s|tag|$TAG|g" deployment.yml > deployment-processed.yml
                sudo kubectl apply -f deployment-processed.yaml
                sudo kubectl rollout restart deployment/azdevops-deployment
 
