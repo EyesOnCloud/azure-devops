@@ -7,7 +7,7 @@ variables:
 pool: 
   name: default 
   demands: 
-    - agent.name -equals controller
+    - agent.name -equals eoc-controller
   
 stages:
   - stage: Build
@@ -28,5 +28,5 @@ stages:
            inputs:
              targetType: 'inline'
              script: |
-               kubectl apply -f deployment.yml
+               sudo kubectl apply -f deployment.yml
 
