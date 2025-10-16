@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: azdevops
-          image: eyesoncloud/azdevops:tag
+          image: eyesoncloud/azdevops:TAG_PLACEHOLDER
           ports:
             - containerPort: 80
 ---
